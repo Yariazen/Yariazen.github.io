@@ -24,6 +24,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
 </head>
 <body onload="selectTab();">
+    <script>
+        var dbx = new window.Dropbox.Dropbox({
+            fetch: fetch,
+            accessToken: 'aIk6Qs5HEaAAAAAAAAAAFQAxrKquHXai9URWJApTlamSVgWmp7FjYZRMMO4n1DfP'
+        });
+    </script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">
             <img src="../Source/logo.png" alt="" class="logo">

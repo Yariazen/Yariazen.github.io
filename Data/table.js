@@ -1,11 +1,5 @@
 // JavaScript source code
-var dbx;
-
 function init() {
-    dbx = new window.Dropbox.Dropbox({
-        fetch: fetch,
-        accessToken: 'aIk6Qs5HEaAAAAAAAAAAFIc1XWVwurkLDuq1jQdh8G5zaPXwIcQn9s9fS-pSQmXu'
-    });
     dataTable = document.getElementById('data');
     comments = document.getElementById('comment');
     data();

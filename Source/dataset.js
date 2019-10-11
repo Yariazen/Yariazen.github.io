@@ -139,18 +139,9 @@ function calculate() {
 
     var name = teamNum + "/" + matchNum + ".json";
 
-    var xhr = new XMLHttpRequest();
-    var filename = name;
-    var file = new File([JSON.stringify(dataset)], filename, { type: "text/json;charset=utf-8" });
-    xhr.open('POST', 'https://content.dropboxapi.com/2/files/upload');
-    xhr.setRequestHeader('Authorization', 'Bearer ' + 'aIk6Qs5HEaAAAAAAAAAAFIc1XWVwurkLDuq1jQdh8G5zaPXwIcQn9s9fS-pSQmXu');
-    xhr.setRequestHeader('Content-Type', 'application/octet-stream');
-    xhr.setRequestHeader('Dropbox-API-Arg', JSON.stringify({
-        path: '/' + file.name,
-        mode: 'overwrite',
-        autorename: false,
-        mute: false
-    }));
-    xhr.send(file);   
+    dbx.filesUpload({
+        contents: [JSON.stringify(dataset)], path: '/' + name, mode: 'overwrite', autorename: false,
+        mute: false, strict_conflict: false
+    });
 }
 
