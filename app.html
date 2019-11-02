@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Home
+        App
     </title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="Style.css" />
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -17,20 +17,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script type="text/javascript">
-        MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
-            },
-            svg: {
-                fontCache: 'global'
-            }
-        };
-    </script>
-
     <div class="jumbotron text-center" style="margin-bottom:0">
         <h1>
-            Introduction
+            Scout App
         </h1>
     </div>
 
@@ -41,12 +30,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="index.html">
                         Introduction
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="app.html">
+                    <a class="nav-link" href="#">
                         Scouting App
                     </a>
                 </li>
@@ -62,23 +51,20 @@
     <div class="container">
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
-                <p>This is a short list of interesting projects I've done over the course of high school.</p>
-                <div class="list-group">
-                    <span class="list-group-item list-group-item-action">
-                        <a href="app.html" class="list-group-item list-group-item-action">
-                            Scouting App
-                        </a>
-                        <img src="Sources/scouting.jpg" class="img-fluid" alt="Responsive image">
-                    </span>
-
-                    <span class="list-group-item list-group-item-action">
-                        <a href="maze.html" class="list-group-item list-group-item-action">
-                            Maze
-                        </a>
-                        <img src="Sources/maze.png  " class="img-fluid" alt="Responsive image">
-                        <img src="Sources/maze(1).png  " class="img-fluid" alt="Responsive image">
-                    </span>
-                </div>
+                <img src="Sources/bluebanner.png" class="img-fluid img-content" alt="Responsive image">
+                <p>This project was relatively complex and it served as my introduction to web development.</p>
+                <p>The idea was simple, we'd make a form with html and collect data with it, and then display it again also using html and javascript.</p>
+                <p>At the time, we thought it'd be a challenge but it'd be doable.</p>
+                <p>After 6 months of work the end result was something like this: </p>
+                <img src="Sources/scouting(1).png" class="img-fluid d-flex align-items-center" alt="Responsive image">
+                <p>Although it doesn't look like much, the product helped as achieve victory at Aerospace Regionals winning us a ticket to worlds.</p>
+                <p>Not my proudest work design wise but we did accomplish what we had set out to do.</p>
+                <p>Currently, I'm the only person working on improving it but I do have a few things planned.</p>
+                <p>The original scout app was server based where we'd upload data to out server, calculations would be done, the data would be stuffed into an sql table, and then it would be displayed.</p>
+                <p>The issues with that is that the server costs money.</p>
+                <p>The improvements I have in mind are then to either switch to firebase which is a free hosting server by google which comes with a database or hosting a website through bluetooth with a raspberry pi</p>
+                <p>Example chart built with chart.js:</p>
+                <img src="Sources/scouting(2).png" class="img-fluid d-flex align-items-center" alt="Responsive image">
             </div>
         </div>
     </div>
