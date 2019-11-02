@@ -1,5 +1,5 @@
 ﻿body {
-    background: url('Sources/background.jpg') no-repeat center center fixed;
+    background: url('img/background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .jumbotron {
-    background-image: url('Sources/Jumbotron.jpg');
+    background-image: url('img/Jumbotron.jpg');
     background-size: cover;
     height: 100%;
     min-height: 50px;
