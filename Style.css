@@ -14,11 +14,21 @@
 }
 
 .img-fluid {
-    max-height: 200px;
+    max-width: 100%;
 }
 
 .img-content {
     float: left;
     max-height: 120px;
     margin-right: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 1.8em;
 }

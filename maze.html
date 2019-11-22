@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="Style.css" />
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -54,15 +53,18 @@
                 <p>Link to complete code <a href="https://github.com/Yariazen/Yariazen.github.io/tree/master/AmazingMaze/src">Link</a></p>
                 <p>This was a project for advanced compsci to build a maze and solve it within the shortest time we can achieve</p>
                 <p>The final result was something like this:</p>
-                <img src="img/maze.jpg" class="img-fluid d-flex align-items-center" alt="Responsive image">
+                <img src="img/maze.jpg" class="img-fluid d-flex align-items-center center" alt="Responsive image">
                 <p>Main class</p>
-                <img src="img/maze(1).jpg" class="img-fluid d-flex align-items-center" alt="Responsive image">
+                <img src="img/maze(1).jpg" class="img-fluid d-flex align-items-center center" alt="Responsive image">
                 <p>In order to optimize the speed, I made my own amortized arraylist class rather than using the default arraylist class in java because although java's default arraylist works well for smaller lists, an amortized arraylist would be much faster once the list grows to above 100 elements.</p>
                 <p>I used recursive backtracking to build the maze and recursive backtracking to solve it.</p>
                 <p>In order to optimize those two algorithims, I made my own linkedlist rather than using arraylist in order to reduce list search time to O(1) time rather than O(log(n)) time.</p>
                 <p>Finally, I used Stanford's standard draw library to draw the maze.</p>
                 <p>Code to draw maze:</p>
-                <img src="img/maze(2).jpg" class="img-fluid d-flex align-items-center" alt="Responsive image">
+                <img src="img/maze(2).jpg" class="img-fluid d-flex align-items-center center" alt="Responsive image">
+                <p>The challenge here wasn't building or solving the maze.  The real challenge was making sure everything ran at o(1) time.</p>
+                <p>To do so, I made use of amortized arraylist which involves first making a circular nodelist implementation and then amortizing it.</p>
+                <p>Then, I made a stack and queue implementation of it in order to use recursive backtracking.</p>
             </div>
         </div>
     </div>
